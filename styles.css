@@ -1,0 +1,119 @@
+.headertitle {
+    grid-area: headertitle;
+}
+.navigation {
+    grid-area: navigation;
+    background-color: lightcoral;
+}
+.aboutme {
+    grid-area: aboutme;
+    background-color: lightcyan;
+}
+.contact {
+    grid-area: contact;
+    background-color: lightgreen;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'headertitle headertitle headertitle headertitle'
+        'navigation navigation navigation navigation'
+        'aboutme aboutme aboutme aboutme'
+        'contact contact contact contact';
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1fr 100px 800px 500px;
+}
+
+.headertitle, .headertitle video {
+    position: relative;
+}
+
+.headertitle video {
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: 50% !important;
+}
+  
+.myname {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color:white;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.redname {
+    color: rgb(187,16,53);
+}
+
+.text_1 {
+    animation: text1;
+  }
+
+.text_2 {
+    animation: text2;
+  }
+
+.text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 18s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+
+.text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+
+@keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  60%, 90% {
+    width: 16em;
+  }
+}
+
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 15.5em;
+  }
+}
