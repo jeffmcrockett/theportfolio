@@ -1,10 +1,6 @@
 .headertitle {
     grid-area: headertitle;
 }
-.navigation {
-    grid-area: navigation;
-    background-color: lightcoral;
-}
 .aboutme {
     grid-area: aboutme;
     background-color: lightcyan;
@@ -18,11 +14,10 @@
     display: grid;
     grid-template-areas:
         'headertitle headertitle headertitle headertitle'
-        'navigation navigation navigation navigation'
         'aboutme aboutme aboutme aboutme'
         'contact contact contact contact';
-    grid-auto-columns: 1fr;
-    grid-template-rows: 1fr 100px 800px 500px;
+    grid-template-rows: auto;
+    grid-template-columns: repreat(3, 1fr);
 }
 
 .headertitle, .headertitle video {
@@ -30,17 +25,19 @@
 }
 
 .headertitle video {
-      background-size: cover !important;
+      background-size: contain !important;
       background-repeat: no-repeat !important;
       background-position: 50% !important;
+      width: 100%;
 }
   
 .myname {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -57,6 +54,29 @@ h2 {
     color: white;
     font-size: 40px;
     margin-top: 0px;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 8%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+}
+
+.navlist {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-top:40px;
+    width: 120px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.navlist:hover {
+    color: rgb(70, 128, 204);
 }
 
 .redname {
@@ -76,8 +96,8 @@ h2 {
     white-space: nowrap;
     display: inline-block;
     position: relative;
-    animation-duration: 18s;
-    animation-timing-function: steps(25, end);
+    animation-duration: 20s;
+    animation-timing-function: steps(22, end);
     animation-iteration-count: infinite;
   }
 
@@ -105,7 +125,7 @@ h2 {
   }
   
   60%, 90% {
-    width: 16em;
+    width: 18em;
   }
 }
 
@@ -114,6 +134,12 @@ h2 {
     width: 0;
   }
   10%, 40% {
-    width: 15.5em;
+    width: 22.5em;
   }
 }
+
+/*
+My fonts
+font-family: 'Merriweather', serif;
+font-family: 'Raleway', sans-serif;
+*/
