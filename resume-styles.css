@@ -1,18 +1,18 @@
 html {
-    background-color: rgb(44, 52, 63);
+    background-color: rgb(53,60,100);
 }
 
 .nameinfo { 
     grid-area: nameinfo;
-    background-color:	rgb(55, 68, 87);
+    background-color: rgb(31, 28, 28);
 }
 .profilepicture { 
     grid-area: profilepicture;
-    background-color: 	rgb(55, 68, 87);
+    background-color: rgb(31, 28, 28);
 }
 .contactinfo { 
     grid-area: contactinfo;
-    background-color: rgb(44, 52, 63);
+    background-color: rgb(53,60,100);
 }
 .leftside { 
     grid-area: leftside;
