@@ -29,6 +29,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#red2 {
+    color: red;
+}
   
 h1 {
     font-family: 'Raleway', sans-serif !important;
