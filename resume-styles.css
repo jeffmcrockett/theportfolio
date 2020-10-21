@@ -8,15 +8,19 @@ body {
 
 .homenav {
     grid-area: home;
+    font-family: 'Quicksand', sans-serif;
 }
 .resumenav {
     grid-area: resume;
+    font-family: 'Quicksand', sans-serif;
 }
 .portfolionav {
     grid-area: portfolio;
+    font-family: 'Quicksand', sans-serif;
 }
 .contactnav {
     grid-area: contact;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .topnav {
@@ -65,6 +69,7 @@ button {
     background-color: black;
     color: white;
     font-size: 25px;
+    border-radius: 20% 20% 20% 20%;
 }
 
 .nameinfo { 
