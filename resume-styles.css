@@ -116,7 +116,7 @@ button {
     margin-right: 30px;
     grid-column: 4/5;
     float: right;
-  }
+}
 
 .contactinformation {
     display: grid;
@@ -124,6 +124,7 @@ button {
     color: white;
     text-align: center;
     line-height: 40px;
+    margin-top: 6px;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -179,6 +180,12 @@ h6 {
     justify-content: space-between;
 }
 
+.skillcontainer {
+    display: grid;
+    grid-template-columns: 260px 40px 40px 40px 40px 40px;
+    line-height: 31px;
+}
+
 .red4 {
     color: rgb(197, 19, 24);
     font-style: italic;
@@ -188,6 +195,18 @@ h6 {
 .red6 {
     color: rgb(197, 19, 24);
     font-style: italic;
+}
+
+#redicon {
+    color: red;
+    align-items: baseline;
+    line-height: 31px;
+}
+
+#grayicon {
+    color: gray;
+    align-items: baseline;
+    line-height: 31px;
 }
 
 ul {

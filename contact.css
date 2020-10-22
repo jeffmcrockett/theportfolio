@@ -33,6 +33,68 @@
     color: red;
 }
 
-#red {
+#red, .red{
     color: red;
 }
+
+.red {
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif !important;
+    color: black;
+    font-size: 6vw;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 0px;
+}
+
+.contactcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 2vw;
+}
+
+.contactform {
+    width: 45vw;
+    height: 70vw;
+    background-color: pink;
+}
+
+.socialcontact {
+    width: 45vw;
+    background-color: royalblue;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: red;
+  }
+  
+  .contactform {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
