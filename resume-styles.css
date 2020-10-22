@@ -197,13 +197,13 @@ h6 {
     font-style: italic;
 }
 
-#redicon {
+.redicon {
     color: red;
     align-items: baseline;
     line-height: 31px;
 }
 
-#grayicon {
+.grayicon {
     color: gray;
     align-items: baseline;
     line-height: 31px;
