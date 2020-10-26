@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(253, 253, 253, 0.292);
+}
+
 .homenav {
     grid-area: home;
 }
@@ -52,49 +56,56 @@ h1 {
 
 .contactcontainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 3vw;
     margin-right: 3vw;
     margin-top: 2vw;
 }
 
 .contactform {
-    width: 45vw;
+    width: 40vw;
     height: 70vw;
-    background-color: pink;
 }
 
 .socialcontact {
-    width: 45vw;
-    background-color: royalblue;
+    width: 40vw;
 }
 
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(223, 223, 223);
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
+}
   
-  input[type=submit] {
+input[type=submit] {
     background-color: black;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: red;
-  }
+}
   
-  .contactform {
+.contactform {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #fcfafacf;
     padding: 20px;
-  }
+}
+
+.contactimg {
+    width: 10vw;
+    height: 10vw;
+}
+.contactimg2 {
+    width: 14vw;
+    height: 14vw;
+}
